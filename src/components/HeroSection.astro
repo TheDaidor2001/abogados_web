@@ -1,0 +1,67 @@
+---
+import HeroImage from "./HeroImage.astro";
+import Book from "./icons/Book.astro";
+import Brain from "./icons/Brain.astro";
+import Family from "./icons/Family.astro";
+import HorseToy from "./icons/HorseToy.astro";
+import Man from "./icons/Man.astro";
+import Wordl from "./icons/Wordl.astro";
+---
+
+<section
+    class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-x-5 max-w-7xl mx-auto px-5 xl:px-0"
+>
+    <div>
+        <h3 class="text-blue-500 text-xl uppercase">
+            Conocimiento a tu alcance
+        </h3>
+        <h1 class="text-6xl mb-5 text-pretty">Bienvenido a ICE Abogacía</h1>
+        <p class="text-gray-700 text-lg">
+            La sensibilización es clave para construir una sociedad más empática
+            y consciente.
+        </p>
+
+        <ul class="flex items-center gap-x-5 mt-5 text-lg">
+            <li class="flex items-center gap-x-1">
+                <Brain className="size-10 text-blue-700" />
+                <span class="text-gray-900 font-semibold">Concienciar</span>
+            </li>
+            <li class="flex items-center gap-x-1">
+                <Book className="size-10 text-blue-700" />
+                <span class="text-gray-900 font-semibold">Educar</span>
+            </li>
+            <li class="flex items-center gap-x-1">
+                <Wordl className="size-10 text-blue-700" />
+                <span class="text-gray-900 font-semibold">Actuar</span>
+            </li>
+        </ul>
+
+        <button
+            class="bg-blue-700 px-5 py-2 rounded-lg mt-5 text-white uppercase"
+            >Contáctanos</button
+        >
+    </div>
+
+    <div class="flex gap-x-3 items-center justify-center w-full mt-10 lg:mt-0">
+        <!-- Card 1 -->
+        <HeroImage text="Niños" imgSrc="/img/prueba.webp">
+            <HorseToy
+                className="size-12 text-white bg-blue-500 p-2 rounded-full"
+            />
+        </HeroImage>
+
+        <!-- Card 2 -->
+        <HeroImage text="Jóvenes" imgSrc="/img/prueba.webp">
+            <Man className="size-12 text-white bg-blue-500 p-2 rounded-full" />
+        </HeroImage>
+
+        <!-- Card 3 -->
+        <HeroImage text="Adultos" imgSrc="/img/prueba.webp">
+            <Family
+                className="size-12 text-white bg-blue-500 p-2 rounded-full"
+            />
+        </HeroImage>
+
+        <!-- Card 4 -->
+    </div>
+</section>
