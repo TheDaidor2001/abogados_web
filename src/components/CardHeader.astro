@@ -1,0 +1,23 @@
+---
+interface Props {
+    link: string;
+    text: string;
+    subtitle: string;
+}
+
+const { link, subtitle, text } = Astro.props;
+---
+
+<div class="px-5 bg-white py-10 rounded-lg flex flex-col items-center max-w-96">
+    <slot />
+    <h5 class="text-center font-bold text-2xl">{text}</h5>
+    <p class="text-center text-sm text-gray-700 text-pretty">
+        {subtitle}
+    </p>
+
+    <a
+        href={link}
+        class="inline-block bg-blue-500 px-10 py-1 text-center mt-5 text-white rounded-md"
+        >Ver</a
+    >
+</div>

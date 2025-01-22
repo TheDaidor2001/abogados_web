@@ -1,0 +1,32 @@
+---
+import CardHeader from "./CardHeader.astro";
+import Info from "./icons/Info.astro";
+import Newspapper from "./icons/Newspapper.astro";
+import Video from "./icons/Video.astro";
+---
+
+<section
+    class="flex justify-center items-center py-10 gap-x-5 bg-blue-200 mt-10 px-10"
+>
+    <CardHeader
+        link="#"
+        subtitle=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum laboriosam ipsa assumenda cum, iste dolor aspernatur eius fugit perspiciatis totam?"
+        text="Videos"
+    >
+        <Info className="size-20" />
+    </CardHeader>
+    <CardHeader
+        link="#"
+        subtitle=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum laboriosam ipsa assumenda cum, iste dolor aspernatur eius fugit perspiciatis totam?"
+        text="Videos"
+    >
+        <Newspapper className="size-20" />
+    </CardHeader>
+    <CardHeader
+        link="#"
+        subtitle="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum laboriosam ipsa assumenda cum, iste dolor aspernatur eius fugit  perspiciatis totam?"
+        text="Videos"
+    >
+        <Video className="size-20" />
+    </CardHeader>
+</section>
