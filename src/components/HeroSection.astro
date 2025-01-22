@@ -9,13 +9,15 @@ import Wordl from "./icons/Wordl.astro";
 ---
 
 <section
-    class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-x-5 max-w-7xl mx-auto px-5 xl:px-0"
+    class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-x-5 max-w-7xl mx-auto px-5 xl:px-0 mt-10"
 >
     <div>
-        <h3 class="text-blue-500 text-xl uppercase">
+        <h3 class="text-blue-500 text-lg uppercase">
             Conocimiento a tu alcance
         </h3>
-        <h1 class="text-6xl mb-5 text-pretty">Bienvenido a ICE Abogacía</h1>
+        <h1 class="text-4xl lg:text-6xl mb-5 text-pretty">
+            Bienvenido a ICE Abogacía
+        </h1>
         <p class="text-gray-700 text-lg">
             La sensibilización es clave para construir una sociedad más empática
             y consciente.
@@ -23,16 +25,22 @@ import Wordl from "./icons/Wordl.astro";
 
         <ul class="flex items-center gap-x-5 mt-5 text-lg">
             <li class="flex items-center gap-x-1">
-                <Brain className="size-10 text-blue-700" />
-                <span class="text-gray-900 font-semibold">Concienciar</span>
+                <Brain className="size-8 md:size-10 text-blue-700" />
+                <span class="text-gray-900 font-semibold text-sm md:text-lg"
+                    >Concienciar</span
+                >
             </li>
             <li class="flex items-center gap-x-1">
-                <Book className="size-10 text-blue-700" />
-                <span class="text-gray-900 font-semibold">Educar</span>
+                <Book className="size-8 md:size-10 text-blue-700" />
+                <span class="text-gray-900 font-semibold text-sm md:text-lg"
+                    >Educar</span
+                >
             </li>
             <li class="flex items-center gap-x-1">
-                <Wordl className="size-10 text-blue-700" />
-                <span class="text-gray-900 font-semibold">Actuar</span>
+                <Wordl className="size-8 md:size-10 text-blue-700" />
+                <span class="text-gray-900 font-semibold text-sm md:text-lg"
+                    >Actuar</span
+                >
             </li>
         </ul>
 

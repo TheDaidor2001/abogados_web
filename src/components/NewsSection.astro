@@ -1,0 +1,41 @@
+---
+import NewsCard from "./newsCard.astro";
+---
+
+<section class="max-w-7xl mx-auto mt-10">
+    <h5 class="text-center text-5xl font-bold mb-5">Últimas noticas</h5>
+    <p>
+        <p class="text-center text-lg text-gray-700 w-1/2 mx-auto mb-5">
+            Mantente informado con las noticias más recientes sobre temas que
+            impactan a nuestra comunidad y el mundo.
+        </p>
+    </p>
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 mt-20 px-5 xl:px-0"
+    >
+        <NewsCard
+            title="Lorem ipsum dolor sit, amet consectetur adipisicing."
+            date="1 de Agosto, 2024"
+            imageSrc="/img/prueba.webp"
+            link="#"
+        />
+        <NewsCard
+            title="Lorem ipsum dolor sit, amet consectetur adipisicing."
+            date="1 de Agosto, 2024"
+            imageSrc="/img/prueba.webp"
+            link="#"
+        />
+        <NewsCard
+            title="Lorem ipsum dolor sit, amet consectetur adipisicing."
+            date="1 de Agosto, 2024"
+            imageSrc="/img/prueba.webp"
+            link="#"
+        />
+        <NewsCard
+            title="Lorem ipsum dolor sit, amet consectetur adipisicing."
+            date="1 de Agosto, 2024"
+            imageSrc="/img/prueba.webp"
+            link="#"
+        />
+    </div>
+</section>
