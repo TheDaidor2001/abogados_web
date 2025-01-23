@@ -1,0 +1,35 @@
+---
+interface Props {
+    imgSrc: string;
+    title: string;
+    description: string;
+    downloadLink?: string;
+    readpdfLink?: string;
+}
+const { description, downloadLink, imgSrc, readpdfLink, title } = Astro.props;
+---
+
+<article class="px-5 md:p-0">
+    <img
+        src="/img/prueba.webp"
+        alt=""
+        class="w-2/3 xs:w-2/3 h-80 object-cover rounded-lg mx-auto"
+    />
+    <h5 class="text-center text-xl font-semibold font-heebo mt-5 uppercase">
+        {title}
+    </h5>
+    <p class="text-md text-center text-gray-800">
+        {description}
+    </p>
+    <div class="flex justify-center gap-x-3 mt-3">
+        <a
+            href={downloadLink}
+            class="border-2 border-gray-700 px-2 py-1 text-gray-700 rounded-md hover:bg-gray-700 hover:text-white hover:scale-105 transition-all"
+            download>Descargar</a
+        >
+        <button
+            class="bg-blue-700 text-white px-2 py-1 rounded-md hover:bg-blue-800 hover:scale-105 hover:border-transparent transition-all"
+            >Leer PDF</button
+        >
+    </div>
+</article>

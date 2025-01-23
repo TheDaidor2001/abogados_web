@@ -48,24 +48,31 @@ console.log(currentUrl.pathname);
                 class="flex flex-col items-center font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
             >
                 <Links
-                    link="#"
+                    link="/"
                     linkText="Inicio"
                     className={currentUrl.pathname === "/"
-                        ? "bg-blue-500 text-white md:bg-transparent md:text-blue-500 "
+                        ? "bg-blue-500 text-white md:bg-transparent md:text-blue-700 "
                         : ""}
                 />
                 <Links
                     link="#"
                     linkText="Noticias"
                     className={currentUrl.pathname === "/noticias"
-                        ? "bg-blue-500"
+                        ? "bg-blue-500 text-white md:bg-transparent md:text-blue-700 "
                         : ""}
                 />
                 <Links
                     link="#"
                     linkText="Videos"
                     className={currentUrl.pathname === "/videos"
-                        ? "bg-blue-500"
+                        ? "bg-blue-500 text-white md:bg-transparent md:text-blue-700 "
+                        : ""}
+                />
+                <Links
+                    link="/publicaciones"
+                    linkText="Publicaciones"
+                    className={currentUrl.pathname === "/publicaciones"
+                        ? "bg-blue-500 text-white md:bg-transparent md:text-blue-700 "
                         : ""}
                 />
 

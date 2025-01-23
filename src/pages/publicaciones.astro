@@ -1,0 +1,26 @@
+---
+import PublicacionesCard from "../components/publicaciones/PublicacionesCard.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <section class="max-w-7xl mx-auto">
+        <h1
+            class="text-center text-3xl font-heebo font-semibold mt-10 text-gray-800 uppercase"
+        >
+            Descarga nuestras publicaciones
+        </h1>
+
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 items-center justify-center"
+        >
+            <PublicacionesCard
+                title="Folleto de prueba"
+                description="Boletín del mes de Enero de 2025"
+                imgSrc="/img/prueba.webp"
+                downloadLink=""
+                readpdfLink=""
+            />
+        </div>
+    </section>
+</Layout>
