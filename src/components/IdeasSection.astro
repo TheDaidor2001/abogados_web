@@ -1,34 +1,38 @@
 ---
-
+import Check from "./icons/Check.astro";
+import ListIdeas from "./ListIdeas.astro";
 ---
 
-<section class="bg-blue-200 px-5 xl:p-0 mt-20">
+<section class="px-5 xl:p-0">
     <div
         class="max-w-7xl mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-10"
     >
         <div>
-            <h2 class="text-3xl lg:text-5xl font-bold mb-3 text-balance">
+            <h2
+                class="text-3xl lg:text-5xl font-bold mb-3 text-balance font-heebo text-blue-700"
+            >
                 Ayudando y sensiblilizando a toda la población.
             </h2>
-            <p class="text-gray-700 text-sm">
-                Trabajamos para ayudar y sensibilizar a toda la población de
-                Guinea Ecuatorial, promoviendo la empatía, el respeto y la
-                solidaridad a través de diversas iniciativas educativas y de
-                concienciación.
+            <p class="text-gray-700 mb-2 mt-5">
+                Nos dedicamos a trabajar incansablemente para ayudar y
+                sensibilizar a toda la población de Guinea Ecuatorial,
+                fomentando valores esenciales como la empatía, el respeto mutuo
+                y la solidaridad.
             </p>
-            <ul class="grid grid-cols-2 grid-rows-2 mt-10 list-disc pl-10">
-                <li class="col-span-1 text-lg text-gray-800 font-bold">
-                    Empatía
-                </li>
-                <li class="col-span-1 text-lg text-gray-800 font-bold">
-                    Solidaridad
-                </li>
-                <li class="col-span-1 text-lg text-gray-800 font-bold">
-                    Educación
-                </li>
-                <li class="col-span-1 text-lg text-gray-800 font-bold">
-                    Concienciación
-                </li>
+            <p class="text-gray-700 mb-2">
+                A través de una amplia variedad de iniciativas educativas y
+                campañas de concienciación, buscamos inspirar un cambio positivo
+                y duradero en la sociedad.
+            </p>
+            <p class="text-gray-700">
+                Promovemos una convivencia armoniosa y el desarrollo de una
+                comunidad más unida y comprometida con el bienestar colectivo.
+            </p>
+            <ul class="grid grid-cols-2 grid-rows-2 mt-10 list-disc">
+                <ListIdeas text="Empatía" />
+                <ListIdeas text="Solidaridad" />
+                <ListIdeas text="Educación" />
+                <ListIdeas text="Concienciación" />
             </ul>
         </div>
         <div>

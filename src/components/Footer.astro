@@ -1,0 +1,105 @@
+---
+import Instagram from "./icons/Instagram.astro";
+import Facebook from "./icons/Facebook.astro";
+import X from "./icons/x.astro";
+
+const date = new Date().getFullYear();
+---
+
+<footer class="p-4 bg-white sm:p-6 mt-20">
+    <div class="mx-auto max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com" class="flex items-center">
+                    <img
+                        src="https://flowbite.com/docs/images/logo.svg"
+                        class="mr-3 h-8"
+                        alt="FlowBite Logo"
+                    />
+                    <span
+                        class="self-center text-2xl font-semibold whitespace-nowrap"
+                        >Flowbite</span
+                    >
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2
+                        class="mb-6 text-sm font-semibold text-gray-900 uppercase"
+                    >
+                        Enlaces
+                    </h2>
+                    <ul class="text-gray-600 d">
+                        <li>
+                            <a
+                                href="https://flowbite.com"
+                                class="hover:underline">Inicio</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://tailwindcss.com/"
+                                class="hover:underline">Noticias</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://tailwindcss.com/"
+                                class="hover:underline">Videos</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://tailwindcss.com/"
+                                class="hover:underline">Publicaciones</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2
+                        class="mb-6 text-sm font-semibold text-gray-900 uppercase"
+                    >
+                        Contáctanos
+                    </h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-4">
+                            <a
+                                href="https://github.com/themesberg/flowbite"
+                                class="hover:underline"
+                                >Ministerio de información</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center"
+                >© {}
+                <a href="#" class="hover:underline">ICE Obogacía</a>{date}.
+                Todos los derechos reservados.
+            </span>
+            <div
+                class="flex mt-4 space-x-6 sm:justify-center items-center sm:mt-0"
+            >
+                <a href="#" class="">
+                    <Instagram
+                        className="size-5 text-gray-600 hover:scale-110 transition-transform"
+                    />
+                </a>
+                <a href="#" class="">
+                    <Facebook
+                        className="size-5 text-gray-600 hover:scale-110 transition-transform"
+                    />
+                </a>
+                <a href="#" class="">
+                    <X
+                        className="size-4 text-gray-600 hover:scale-110 transition-transform"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

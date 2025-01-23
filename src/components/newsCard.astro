@@ -1,4 +1,6 @@
 ---
+import ArrowRigth from "./icons/ArrowRigth.astro";
+
 interface Props {
     imageSrc: string;
     date: string;
@@ -20,8 +22,10 @@ const { date, imageSrc, link, title } = Astro.props;
         >
         <a
             href={link}
-            class="inline-block w-full mt-3 hover:text-blue-600 transition-colors"
-            >Leer más</a
+            class="inline-flex mt-3 bg-blue-600 w-fit px-3 py-1 text-white rounded-md items-center gap-x-3 font-heebo hover:scale-105 transition-all"
         >
+            <span>Leer más</span>
+            <ArrowRigth className="size-5" />
+        </a>
     </div>
 </article>

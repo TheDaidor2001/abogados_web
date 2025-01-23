@@ -2,20 +2,23 @@
 import HeroImage from "./HeroImage.astro";
 import Book from "./icons/Book.astro";
 import Brain from "./icons/Brain.astro";
+import Facebook from "./icons/Facebook.astro";
 import Family from "./icons/Family.astro";
 import HorseToy from "./icons/HorseToy.astro";
+import Instagram from "./icons/Instagram.astro";
 import Man from "./icons/Man.astro";
 import Wordl from "./icons/Wordl.astro";
+import X from "./icons/x.astro";
 ---
 
 <section
-    class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-x-5 max-w-7xl mx-auto px-5 xl:px-0 mt-10"
+    class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-x-5 max-w-7xl mx-auto px-5 xl:px-0 mt-10 font-overpass"
 >
     <div>
-        <h3 class="text-blue-500 text-lg uppercase">
+        <h3 class="text-blue-500 text-lg uppercase font-overpass">
             Conocimiento a tu alcance
         </h3>
-        <h1 class="text-4xl lg:text-6xl mb-5 text-pretty">
+        <h1 class="text-4xl lg:text-6xl mb-5 text-pretty font-heebo font-bold">
             Bienvenido a ICE Abogacía
         </h1>
         <p class="text-gray-700 text-lg">
@@ -26,7 +29,8 @@ import Wordl from "./icons/Wordl.astro";
         <ul class="flex items-center gap-x-5 mt-5 text-lg">
             <li class="flex items-center gap-x-1">
                 <Brain className="size-8 md:size-10 text-blue-700" />
-                <span class="text-gray-900 font-semibold text-sm md:text-lg"
+                <span
+                    class="text-gray-900 font-semibold text-sm md:text-lg font-overpass"
                     >Concienciar</span
                 >
             </li>
@@ -43,11 +47,35 @@ import Wordl from "./icons/Wordl.astro";
                 >
             </li>
         </ul>
-
-        <button
-            class="bg-blue-700 px-5 py-2 rounded-lg mt-5 text-white uppercase"
-            >Contáctanos</button
-        >
+        <h5 class="text-gray-900 text-lg mt-7 font-heebo font-bold">
+            Síguenos en nuestras redes sociales
+        </h5>
+        <div class="flex mt-5 space-x-6 items-center">
+            <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+                <Instagram
+                    className="size-7 text-blue-600 hover:scale-110 transition-transform"
+                />
+            </a>
+            <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+                <Facebook
+                    className="size-7 text-blue-600 hover:scale-110 transition-transform"
+                />
+            </a>
+            <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+                <X
+                    className="size-7 text-blue-600 hover:scale-110 transition-transform"
+                />
+            </a>
+        </div>
     </div>
 
     <div

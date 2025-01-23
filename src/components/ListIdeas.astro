@@ -1,0 +1,16 @@
+---
+import Check from "./icons/Check.astro";
+
+interface Props {
+    text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<li
+    class="col-span-1 text-lg text-gray-800 font-bold flex items-center gap-x-2"
+>
+    <Check className="size-5 text-blue-600" />
+    <span class="font-heebo">{text}</span>
+</li>
