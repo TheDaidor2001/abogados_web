@@ -4,6 +4,10 @@ import HeroSection from "../components/index/HeroSection.astro";
 import IdeasSection from "../components/index/IdeasSection.astro";
 import NewsSection from "../components/index/NewsSection.astro";
 import Layout from "../layouts/Layout.astro";
+
+const { session, user } = Astro.locals;
+
+console.log({ session, user });
 ---
 
 <Layout>

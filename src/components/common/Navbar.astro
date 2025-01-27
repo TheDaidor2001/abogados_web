@@ -1,9 +1,10 @@
 ---
 import User from "../icons/User.astro";
 import Links from "../index/Links.astro";
+import DropDown from "../auth/DropDown.astro";
 
 const currentUrl = Astro.url;
-console.log(currentUrl.pathname);
+const { user } = Astro.locals;
 ---
 
 <nav class="border-white shadow-lg">
@@ -69,20 +70,23 @@ console.log(currentUrl.pathname);
                         : ""}
                 />
 
-                <li>
-                    <a
-                        href="/auth"
-                        class="flex items-center gap-x-2 hover:bg-blue-600 px-2 py-1 rounded-lg transition-colors duration-200 group"
-                    >
-                        <User
-                            className="size-8 group-hover:text-white duration-300"
-                        />
-                        <span
-                            class="group-hover:text-white font-bold duration-300"
-                            >Iniciar Sesión</span
-                        >
-                    </a>
-                </li>
+                {
+                    user ? (
+                        <DropDown />
+                    ) : (
+                        <li>
+                            <a
+                                href="/auth"
+                                class="flex items-center gap-x-2 hover:bg-blue-600 px-2 py-1 rounded-lg transition-colors duration-200 group"
+                            >
+                                <User className="size-8 group-hover:text-white duration-300" />
+                                <span class="group-hover:text-white font-bold duration-300">
+                                    Iniciar Sesión
+                                </span>
+                            </a>
+                        </li>
+                    )
+                }
             </ul>
         </div>
     </div>
